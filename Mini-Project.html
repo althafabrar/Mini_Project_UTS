@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Project UTS</title>
+    <link rel="stylesheet" href="/Design Web/design.css">
+</head>
+
+</head>
+
+<body class="bg">
+    <header>
+        <div class="flex-container">
+            <img src="LOGO-STORE.jpeg" alt="LOGO-STORE" class="align-left" id="logo">
+            <h1>KJ Store</h1>
+        </div>
+        <!-- <h1>KJ Store</h1> -->
+    </header>
+
+    <nav>
+        <!-- untuk X menutup sidebar -->
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            <a href="#">Beranda</a>
+            <a href="#">Produk</a>
+            <a href="#">Keranjang Belanja</a>
+            <a href="#">Kontak</a>
+        </div>
+
+        <!-- untuk membuka sidebar/hamburg -->
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="product">
+            <img src="https://news.codashop.com/id/wp-content/uploads/sites/4/2023/02/MLBB-How-Weekly-Diamond-Pass-Works.jpg"
+                alt="Weekly Pass" width="350" height="300">
+            <h2>Weekly Pass</h2>
+            <button class="buy-button">Beli</button>
+        </section>
+
+        <section class="product">
+            <img src="diamond ml.jpg" alt="Diamond Mobile Legend" width="350" height="300">
+            <h2>Diamond Mobile Legend</h2>
+            <button class="buy-button" data-product="2">Beli</button>
+        </section>
+
+        <section class="product">
+            <img src="joki.jpg" alt="Joki Mobile Legend" width="350" height="300">
+            <h2>Joki Classic Mobile Legend</h2>
+            <button class="buy-button">Beli</button>
+        </section>
+
+        <section class="product">
+            <img src="https://media.karousell.com/media/photos/products/2022/8/25/jasa_joki_mobile_legends_mlbb__1661439045_96c85c71"
+                alt="Joki Ranked Mobile Legend" width="350" height="300">
+            <h2>Joki Classic Mobile Legend</h2>
+            <button class="buy-button">Beli</button>
+        </section>
+
+        <section class="product">
+            <img src="https://i.pinimg.com/564x/d5/b9/d2/d5b9d2aad3bd136816a62d0967f09076.jpg" alt="Joki Mobile Legend"
+                width="350" height="300">
+            <h2> Joki Paket Hemat Mobile Legend</h2>
+            <button class="buy-button">Beli</button>
+        </section>
+    </main>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+</body>
+
+</html>

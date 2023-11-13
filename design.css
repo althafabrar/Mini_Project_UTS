@@ -1,0 +1,150 @@
+.bg {
+    background-color: rgb(4, 4, 42);
+}
+
+
+/* Gaya untuk elemen HTML */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+header div img {
+    width: 90px;
+    margin-right: 20px;
+    flex: 0 0 auto;
+}
+
+header div h1 {
+    flex: 1;
+}
+
+/* NAV */
+nav {
+    background-color: #444;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 2rem;
+}
+
+
+
+/* hamburger menu */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #007BFF;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+#main {
+    transition: margin-left 0.5s;
+}
+
+
+
+/* main */
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+}
+
+.buy-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color: #234263;
+}
+
+
+/* RESPONSIF */
+@media only screen and (max-width : 768px) {
+    .product {
+        width: calc(40.40% - 40px);
+    }
+
+    .product img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .sidebar {
+        padding-top: 80px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
